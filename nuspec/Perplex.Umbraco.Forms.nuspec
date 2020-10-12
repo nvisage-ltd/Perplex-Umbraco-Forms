@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+	<metadata>
+		<id>Perplex.Umbraco.Forms</id>
+		<version>1.8.4-beta</version>
+		<title>Perplex.Umbraco.Forms</title>
+		<authors>Perplex Digital B.V.</authors>
+		<owners>Perplex Digital B.V.</owners>
+		<copyright>Perplex Digital B.V.</copyright>
+		<iconUrl>https://www.perplex.nl/media/icons/favicon-32x32.png</iconUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<license type="expression">MIT</license>
+    	<projectUrl>https://github.com/PerplexDigital/Perplex-Umbraco-Forms</projectUrl>
+		<description>Umbraco Forms on Perplex Steroids</description>
+		<summary>Perplex.Umbraco.Forms is an open source package for the Umbraco CMS. The package can be installed on any 7.X version of Umbraco. The package extends the default Umbraco Forms-package with some additional controls and copy-functionality.</summary>
+		<language>en-US</language>
+		<tags>umbraco</tags>
+		<dependencies>
+			<group targetFramework=".NETFramework4.5">
+			<dependency id="UmbracoCms.Core" version="7.6.0" />
+			<dependency id="UmbracoForms.Core" version="6.0.1" />
+		</group>
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="..\Perplex.Umbraco.Forms\bin\Release\Perplex.Umbraco.Forms.dll" target="lib\net45\Perplex.Umbraco.Forms.dll" />
+		<file src="..\Perplex.Umbraco.Forms\App_Plugins\**" exclude="**.less" target="content\App_Plugins" />
+	</files>
+</package>
+
+
